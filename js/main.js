@@ -28,7 +28,7 @@
     }
   });
 
-  if (path.includes("/services/") || pageName === "static-websites.html" || pageName === "windows-hardening.html" || pageName === "machine-restoration.html") {
+  if (path.includes("/services/")) {
     const servicesSummary = document.querySelector("[data-nav-group='services']");
     if (servicesSummary) {
       servicesSummary.classList.add("is-active");
