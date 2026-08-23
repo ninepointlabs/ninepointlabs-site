@@ -11,12 +11,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ninepointlabs.com/services/windows-hardening.html</loc>
+    <loc>https://ninepointlabs.com/services/linux-open-source.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ninepointlabs.com/education.html</loc>
+    <loc>https://ninepointlabs.com/pleb-one.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ninepointlabs.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
