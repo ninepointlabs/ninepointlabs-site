@@ -117,7 +117,7 @@
 
   const groupPages = {
     services: ["static-websites.html", "linux-open-source.html"],
-    projects: ["pleb-one.html"],
+      projects: ["pleb-one.html", "omarchy.html"],
     explore: ["partners.html"],
   };
 
