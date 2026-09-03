@@ -3,199 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pleb One and Nostr | Nine Point Labs</title>
-    <meta
-      name="description"
-      content="Learn what Nostr is, how Pleb One began, and why Nine Point Labs still supports the network through an active relay and open experiments."
-    />
+    <title>Pleb One | Nine Point Labs</title>
+    <meta name="description" content="Pleb One is the Nostr-first project Nine Point Labs grew out of. The public relay at relay.pleb.one is still running." />
+    <link rel="canonical" href="https://ninepointlabs.com/pleb-one.html" />
+    <link rel="icon" href="assets/npl-mark-ninepoint.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Pleb One | Nine Point Labs" />
+    <meta property="og:description" content="Pleb One is the Nostr-first project Nine Point Labs grew out of. The public relay at relay.pleb.one is still running." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ninepointlabs.com/pleb-one.html" />
+    <meta property="og:image" content="https://ninepointlabs.com/assets/Lightt_npl_logo.png" />
+    <meta name="theme-color" content="#0f6b6e" />
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/main.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- Site Header -->
     <header class="site-header">
-      <div class="site-wrap header-inner">
+      <div class="wrap header-inner">
         <a class="brand" href="index.html" aria-label="Nine Point Labs home">
           <img src="assets/npl-mark-ninepoint.svg" alt="" class="brand-logo" />
-          <span class="brand-label">Nine Point Labs</span>
+          <span>Nine Point Labs</span>
         </a>
-        <button
-          class="menu-toggle"
-          type="button"
-          data-menu-toggle
-          aria-expanded="false"
-          aria-controls="site-navigation"
-          aria-label="Toggle navigation menu"
-        >
-          Menu
-        </button>
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Theme: Auto. Activate to switch between Auto, Light, and Dark."
+          ></button>
+          <button
+            class="menu-toggle"
+            type="button"
+            data-menu-toggle
+            aria-expanded="false"
+            aria-controls="site-navigation"
+            aria-label="Toggle navigation menu"
+          >
+            Menu
+          </button>
+        </div>
         <nav id="site-navigation" class="nav-panel" data-nav-panel aria-label="Primary">
           <ul class="nav-list">
             <li><a href="index.html" data-page="index.html">Home</a></li>
-            <li>
-              <details class="nav-dropdown" data-services-dropdown>
-                <summary data-nav-group="services">Services</summary>
-                <ul class="nav-submenu">
-                  <li>
-                    <a href="services/static-websites.html" data-page="static-websites.html"
-                      >Static Websites</a
-                    >
-                  </li>
-                  <li>
-                    <a href="services/linux-open-source.html" data-page="linux-open-source.html"
-                      >Linux and Open Source</a
-                    >
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details class="nav-dropdown" data-projects-dropdown>
-                <summary data-nav-group="projects">Projects</summary>
-                <ul class="nav-submenu">
-                    <li><a href="pleb-one.html" data-page="pleb-one.html">Pleb One</a></li>
-                    <li><a href="omarchy.html" data-page="omarchy.html">Omarchy</a></li>
-                    <li><a href="persistwise.html" data-page="persistwise.html">Persistwise</a></li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details class="nav-dropdown" data-explore-dropdown>
-                <summary data-nav-group="explore">Explore</summary>
-                <ul class="nav-submenu">
-                  <li><a href="partners.html" data-page="partners.html">Friends</a></li>
-                  <li>
-                    <a href="https://blog.ninepointlabs.com" target="_blank" rel="noopener noreferrer"
-                      >Blog (External)</a
-                    >
-                  </li>
-                </ul>
-              </details>
-            </li>
+            <li><a href="work.html" data-page="work.html">Work</a></li>
+            <li><a href="how-i-build.html" data-page="how-i-build.html">How I build</a></li>
+            <li><a href="services.html" data-page="services.html">Services</a></li>
+            <li><a href="recommends.html" data-page="recommends.html">Recommends</a></li>
             <li><a href="about.html" data-page="about.html">About</a></li>
-            <li><a href="mailto:hello@ninepointlabs.com">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main id="main-content" class="site-wrap">
-      <section class="hero">
-        <p class="eyebrow">Pleb One</p>
-        <h1>The Nostr chapter is still open</h1>
-        <p class="lead">
-          Pleb One started as a Nostr initiative, and we still support it. Nine Point Labs pivoted
-          into a broader experiment studio, but Nostr remains part of the story and part of the
-          work. We still run infrastructure, still ship experiments, and still believe in open
-          protocols that give people more control.
-        </p>
-      </section>
-
-      <section class="section" aria-labelledby="what-is-nostr-heading">
-        <div class="section-head">
-          <h2 id="what-is-nostr-heading">What is Nostr?</h2>
-          <p>
-            Nostr is an open protocol for social communication. Instead of one company owning the
-            network, people use different clients and publish through relays. Your identity is tied
-            to cryptographic keys, and the ecosystem stays portable because no single platform owns
-            your account graph.
-          </p>
-        </div>
-        <div class="card">
-          <ul>
-            <li>Open protocol, not a single app or company</li>
-            <li>Many clients can read and write to the same network</li>
-            <li>Relays carry events across the ecosystem</li>
-            <li>Users control identity through key pairs</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="pivot-heading">
-        <div class="section-head">
-          <h2 id="pivot-heading">About the pivot</h2>
-          <p>
-            We expanded from a Nostr-first initiative into Nine Point Labs so we could incubate more
-            ideas across web, systems, and open source work. That pivot did not mean abandoning
-            Nostr. It meant giving ourselves a bigger workshop while continuing to support the
-            projects and people who helped start this journey.
+<main id="main-content" class="wrap">
+      <section class="hero" aria-labelledby="po-heading">
+        <div>
+          <p class="eyebrow">Pleb One</p>
+          <h1 id="po-heading">Where this started</h1>
+          <p class="lead">
+            Pleb One was a Nostr-first project: a relay, some experiments, and a lot of learning in
+            public. Nine Point Labs grew out of it so I could build more widely. The relay never
+            went anywhere.
           </p>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="still-running-heading">
+      <section class="section" aria-labelledby="po-nostr-heading">
         <div class="section-head">
-          <h2 id="still-running-heading">What we still run</h2>
+          <h2 id="po-nostr-heading">If you're new to Nostr</h2>
+          <p class="muted prose">
+            It's an open protocol for social communication. No company owns the network. You use
+            whichever client you like, publish through relays, and your identity is a key pair you
+            hold. That last part is why I care about it, and why my
+            <a href="work.html#nostr">Nostr tools</a> all keep the key on your own machine.
+          </p>
         </div>
-        <div class="card-grid two-col">
+      </section>
+
+      <section class="section" aria-labelledby="po-run-heading">
+        <div class="section-head">
+          <h2 id="po-run-heading">What still runs</h2>
+        </div>
+        <div class="grid grid-2">
           <article class="card">
-            <h3>Pleb One Relay</h3>
-            <p>
-              We continue to operate a public relay as part of our ongoing support for the Nostr
-              ecosystem.
-            </p>
-            <p>
-              <a href="https://relay.pleb.one" target="_blank" rel="noopener noreferrer"
-                >relay.pleb.one</a
-              >
-            </p>
+            <h3>The relay</h3>
+            <p>A public Nostr relay I still operate as a small contribution back to the network.</p>
+            <div class="card-links">
+              <a href="https://relay.pleb.one" rel="noopener noreferrer">relay.pleb.one</a>
+            </div>
           </article>
           <article class="card">
-            <h3>Nostr Experiments</h3>
-            <p>
-              Our Nostr experiments, prototypes, and related repositories remain available and
-              actively maintained where appropriate.
-            </p>
-            <p>
-              <a
-                href="https://github.com/orgs/PlebOne/repositories"
-                target="_blank"
-                rel="noopener noreferrer"
-                >github.com/orgs/PlebOne/repositories</a
-              >
-            </p>
+            <h3>The experiments</h3>
+            <p>The original Pleb One repositories are still up, maintained where it makes sense.</p>
+            <div class="card-links">
+              <a href="https://github.com/orgs/PlebOne/repositories" rel="noopener noreferrer">github.com/PlebOne</a>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="pleb-one-cta-heading">
-        <div class="cta-panel">
-          <h2 id="pleb-one-cta-heading">Curious about Nostr or Pleb One?</h2>
-          <p>
-            Email <a href="mailto:hello@ninepointlabs.com">hello@ninepointlabs.com</a> and we can
-            point you to the right starting place, whether you are brand new or already building.
+      <section class="section" aria-labelledby="po-cta-heading">
+        <div class="panel">
+          <h2 id="po-cta-heading">Curious about Nostr?</h2>
+          <p class="prose">
+            Email <a href="mailto:hello@ninepointlabs.com">hello@ninepointlabs.com</a> and I'll
+            point you at a good starting place, whether you're brand new or already building.
           </p>
-          <div class="button-row">
-            <a class="button button-primary" href="https://relay.pleb.one" target="_blank" rel="noopener noreferrer"
-              >Visit the relay</a
-            >
-            <a
-              class="button button-secondary"
-              href="https://github.com/orgs/PlebOne/repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Browse repositories</a
-            >
-          </div>
         </div>
       </section>
     </main>
-
     <footer class="site-footer">
-      <div class="site-wrap">
-        <p><strong>Nine Point Labs</strong></p>
-        <p>Experiments, ideas, projects, and occasional glorious nerding out.</p>
-        <p><a href="mailto:hello@ninepointlabs.com">hello@ninepointlabs.com</a></p>
-        <p>
-          Find us: <a href="https://x.com/ninepointlabs" target="_blank" rel="noopener noreferrer">X</a>
-          and <a href="https://github.com/ninepointlabs" target="_blank" rel="noopener noreferrer">GitHub</a>,
-          <a href="https://njump.me/npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7" target="_blank" rel="noopener noreferrer">Nostr</a>
-          (npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7)
-        </p>
-        <p>&copy; <span data-current-year></span> Nine Point Labs. All rights reserved.</p>
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <h3>Nine Point Labs</h3>
+            <p>
+              Small, useful things for Linux, Nostr, and people who like to write. Built in
+              Whitehouse, Texas by Tim Apple and a patient team of AI agents.
+            </p>
+            <p style="margin-top: 0.75rem">
+              <a href="mailto:hello@ninepointlabs.com">hello@ninepointlabs.com</a>
+            </p>
+          </div>
+          <div>
+            <h3>Around here</h3>
+            <ul>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="how-i-build.html">How I build</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="recommends.html">Recommends</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Elsewhere</h3>
+            <ul>
+              <li><a href="https://github.com/ninepointlabs" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://blog.ninepointlabs.com" rel="noopener noreferrer">Blog</a></li>
+              <li><a href="https://timapple.com" rel="noopener noreferrer">timapple.com</a></li>
+              <li><a href="https://x.com/ninepointlabs" rel="noopener noreferrer">X</a></li>
+              <li>
+                <a href="https://njump.me/npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7" rel="noopener noreferrer">Nostr</a>
+                <span class="npub">npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer-bottom">&copy; <span data-current-year></span> Nine Point Labs. Made with care, and with help.</p>
       </div>
     </footer>
+
   </body>
 </html>
