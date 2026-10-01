@@ -3,243 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nine Point Labs | Tim Apple builds small, useful things</title>
-    <meta name="description" content="Nine Point Labs is Tim Apple's workshop: Linux desktop plugins for Omarchy, Nostr tools that keep your keys local, writing and journaling tools, and a few services. Built with a team of AI agents." />
+    <title>Nine Point Labs</title>
+    <meta name="description" content="Nine Point Labs is Tim Apple's workshop in Whitehouse, Texas. Links to every blog, product and project site." />
     <link rel="canonical" href="https://ninepointlabs.com/" />
     <link rel="icon" href="assets/npl-mark-ninepoint.svg" type="image/svg+xml" />
-    <meta property="og:title" content="Nine Point Labs | Tim Apple builds small, useful things" />
-    <meta property="og:description" content="Nine Point Labs is Tim Apple's workshop: Linux desktop plugins for Omarchy, Nostr tools that keep your keys local, writing and journaling tools, and a few services. Built with a team of AI agents." />
+    <meta property="og:title" content="Nine Point Labs" />
+    <meta property="og:description" content="Links to every Nine Point Labs blog, product and project site." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ninepointlabs.com/" />
     <meta property="og:image" content="https://ninepointlabs.com/assets/Lightt_npl_logo.png" />
     <meta name="theme-color" content="#0f6b6e" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <main class="wrap">
+      <header class="intro">
+        <img src="assets/npl-mark-ninepoint.svg" alt="" class="mark" width="56" height="56" />
+        <h1>Nine Point Labs</h1>
+        <p>Small, useful things for Linux, Nostr, and people who like to write. Built in Whitehouse, Texas by Tim Apple.</p>
+      </header>
 
-    <header class="site-header">
-      <div class="wrap header-inner">
-        <a class="brand" href="index.html" aria-label="Nine Point Labs home">
-          <img src="assets/npl-mark-ninepoint.svg" alt="" class="brand-logo" />
-          <span>Nine Point Labs</span>
-        </a>
-        <div class="header-actions">
-          <button
-            class="theme-toggle"
-            type="button"
-            data-theme-toggle
-            aria-label="Theme: Auto. Activate to switch between Auto, Light, and Dark."
-          ></button>
-          <button
-            class="menu-toggle"
-            type="button"
-            data-menu-toggle
-            aria-expanded="false"
-            aria-controls="site-navigation"
-            aria-label="Toggle navigation menu"
-          >
-            Menu
-          </button>
-        </div>
-        <nav id="site-navigation" class="nav-panel" data-nav-panel aria-label="Primary">
-          <ul class="nav-list">
-            <li><a href="index.html" data-page="index.html">Home</a></li>
-            <li><a href="work.html" data-page="work.html">Work</a></li>
-            <li><a href="how-i-build.html" data-page="how-i-build.html">How I build</a></li>
-            <li><a href="services.html" data-page="services.html">Services</a></li>
-            <li><a href="recommends.html" data-page="recommends.html">Recommends</a></li>
-            <li><a href="about.html" data-page="about.html">About</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-<main id="main-content" class="wrap">
-      <section class="hero" aria-labelledby="hero-heading">
-        <div>
-          <p class="eyebrow">Nine Point Labs</p>
-          <h1 id="hero-heading">Hi, I'm Tim. I make small, useful things.</h1>
-          <p class="lead">
-            Mostly for Linux desktops, the Nostr network, and people who like to write. I don't
-            write the code myself. I direct a small team of AI agents that does, and I'm honest
-            about that because it's the most interesting part of the story.
-          </p>
-          <div class="button-row">
-            <a class="button button-primary" href="work.html">See the work</a>
-            <a class="button button-secondary" href="how-i-build.html">How I build</a>
-          </div>
-        </div>
-        <img class="hero-star" src="assets/npl-mark-ninepoint.svg" alt="" />
+      <section aria-labelledby="writing">
+        <h2 id="writing">Writing</h2>
+        <ul class="links">
+          <li><a href="https://blog.ninepointlabs.com"><strong>The Word from Ninepoint Labs</strong><span>The Nine Point Labs blog</span><em>blog.ninepointlabs.com</em></a></li>
+          <li><a href="https://timapple.com"><strong>Tim Apple's Desk</strong><span>Tim's personal blog</span><em>timapple.com</em></a></li>
+          <li><a href="https://myazerothlife.com"><strong>My Azeroth Life</strong><span>Dispatches from a life lived in Azeroth</span><em>myazerothlife.com</em></a></li>
+        </ul>
       </section>
 
-      <section class="section" aria-labelledby="featured-heading">
-        <div class="section-head">
-          <p class="eyebrow">Right now</p>
-          <h2 id="featured-heading">The things I use every day</h2>
-          <p class="muted">Real, running, and still getting commits. Start here.</p>
-        </div>
-        <div class="grid grid-3">
-          <article class="card card-featured">
-            <div class="card-title">
-              <h3>Omostrich</h3>
-              <span class="tag tag-live">live</span>
-            </div>
-            <p>
-              A friendly guard for your Nostr key on Omarchy Linux. One bar icon, an encrypted
-              vault, Super+N to post, remote signing for other apps, and an MCP server so my
-              agents can post when I ask them to.
-            </p>
-            <div class="card-links">
-              <a href="https://omostrich.com" rel="noopener noreferrer">omostrich.com</a>
-              <a href="https://github.com/ninepointlabs/omostrich" rel="noopener noreferrer">Source</a>
-            </div>
-          </article>
-          <article class="card card-featured">
-            <div class="card-title">
-              <h3>Persistwise</h3>
-              <span class="tag tag-live">live</span>
-            </div>
-            <p>
-              Keeps a durable copy of your writing without changing where you publish. Point it at
-              an RSS feed and it archives each post locally, to the Wayback Machine, and to IPFS.
-              $40 a year.
-            </p>
-            <div class="card-links">
-              <a href="https://persistwise.com" rel="noopener noreferrer">persistwise.com</a>
-              <a href="persistwise.html">More</a>
-            </div>
-          </article>
-          <article class="card card-featured">
-            <div class="card-title">
-              <h3>Autonomix</h3>
-              <span class="tag">50 stars</span>
-            </div>
-            <p>
-              A package manager for apps that only ship as GitHub releases. Like Obtainium, but for
-              Linux. The desktop app came first; a Go command-line version just came back to life.
-            </p>
-            <div class="card-links">
-              <a href="https://github.com/ninepointlabs/autonomix" rel="noopener noreferrer">Autonomix</a>
-              <a href="https://github.com/ninepointlabs/autonomix-cli" rel="noopener noreferrer">CLI</a>
-            </div>
-          </article>
-        </div>
+      <section aria-labelledby="products">
+        <h2 id="products">Products</h2>
+        <ul class="links">
+          <li><a href="https://persistwise.com"><strong>Persistwise</strong><span>Writing that outlasts the platform: an archive of every post</span><em>persistwise.com</em></a></li>
+          <li><a href="https://folderblog.ninepointlabs.com"><strong>folderblog</strong><span>A folder is a blog: save Markdown, it's published seconds later</span><em>folderblog.ninepointlabs.com</em></a></li>
+          <li><a href="https://bahaireader.org"><strong>Bahá'í Reader</strong><span>Offline prayer book and Writings reader for Linux</span><em>bahaireader.org</em></a></li>
+        </ul>
       </section>
 
-      <section class="section" aria-labelledby="threads-heading">
-        <div class="section-head">
-          <p class="eyebrow">Themes</p>
-          <h2 id="threads-heading">Four threads run through most of it</h2>
-        </div>
-        <div class="grid grid-2">
-          <article class="card">
-            <h3>Omarchy and the Linux desktop</h3>
-            <p>
-              Bar widgets, panels, and themes for Omarchy, plus a couple of COSMIC applets. A
-              calendar, a chat window to my agent, Ring cameras, theme rotation, shortcut cheatsheets.
-            </p>
-            <div class="card-links"><a href="work.html#omarchy">The Omarchy shelf</a></div>
-          </article>
-          <article class="card">
-            <h3>Nostr, keys kept local</h3>
-            <p>
-              Tools that let you use the network without handing anyone your key. Omostrich signs,
-              Omostrich-DB remembers how your notes did, and a public relay still runs at pleb.one.
-            </p>
-            <div class="card-links"><a href="work.html#nostr">The Nostr shelf</a></div>
-          </article>
-          <article class="card">
-            <h3>Writing and journaling</h3>
-            <p>
-              Terminal journals, an Android client for jrnl, Micro.blog posting tools, a feed
-              reader, a bullet journal app. I like to write, and I like tools that stay out of the way.
-            </p>
-            <div class="card-links"><a href="work.html#writing">The writing shelf</a></div>
-          </article>
-          <article class="card">
-            <h3>Odds and ends</h3>
-            <p>
-              A Fastmail terminal client, a post-everywhere applet, a Star Trek watch-order tracker,
-              a fitness app for exercise snacks. Things I wanted, so I had them built.
-            </p>
-            <div class="card-links"><a href="work.html#other">The rest</a></div>
-          </article>
-        </div>
+      <section aria-labelledby="omarchy">
+        <h2 id="omarchy">Omarchy</h2>
+        <ul class="links">
+          <li><a href="https://omarchy.ninepointlabs.com"><strong>Nine Point Labs for Omarchy</strong><span>Bar plugins, apps and themes for Omarchy Linux</span><em>omarchy.ninepointlabs.com</em></a></li>
+          <li><a href="https://omaforge.ninepointlabs.com"><strong>omaforge</strong><span>World of Warcraft addon manager for Linux</span><em>omaforge.ninepointlabs.com</em></a></li>
+        </ul>
       </section>
 
-      <section class="section" aria-labelledby="how-heading">
-        <div class="panel panel-teal">
-          <p class="eyebrow">How it gets made</p>
-          <h2 id="how-heading">One person, three agents, a lot of plain English</h2>
-          <p class="prose">
-            I'm a semi-retired technologist and a full-time dad. I know what I want built and I
-            can tell when it's wrong, but I don't write code. So I run a small team of AI agents:
-            one writes and ships code, one handles the machine and deployments, and one keeps the
-            plan straight. Every project on this site was made that way. It's not a trick and it's
-            not magic. It's delegation, done carefully, in public.
-          </p>
-          <div class="button-row">
-            <a class="button button-primary" href="how-i-build.html">Read how it works</a>
-          </div>
-        </div>
+      <section aria-labelledby="nostr">
+        <h2 id="nostr">Nostr</h2>
+        <ul class="links">
+          <li><a href="https://omostrich.com"><strong>Omostrich</strong><span>A friendly guard for your Nostr key</span><em>omostrich.com</em></a></li>
+          <li><a href="https://relay.pleb.one"><strong>relay.pleb.one</strong><span>Community Nostr relay from Pleb One</span><em>relay.pleb.one</em></a></li>
+        </ul>
       </section>
 
-      <section class="section" aria-labelledby="contact-heading">
-        <div class="section-head">
-          <h2 id="contact-heading">Say hello</h2>
-          <p class="muted prose">
-            If something here helped you, broke for you, or gave you an idea, I'd like to hear it.
-            I also take on a little client work: static websites and Linux help.
-          </p>
-        </div>
-        <div class="button-row" style="margin-top: 0">
-          <a class="button button-primary" href="mailto:hello@ninepointlabs.com">hello@ninepointlabs.com</a>
-          <a class="button button-secondary" href="services.html">What I offer</a>
-        </div>
+      <section aria-labelledby="clients">
+        <h2 id="clients">Client work</h2>
+        <ul class="links">
+          <li><a href="https://www.itsaber.com"><strong>IT Saber</strong><span>CCTV, access control, networking and IT support</span><em>itsaber.com</em></a></li>
+        </ul>
       </section>
+
+      <footer class="elsewhere">
+        <a href="mailto:hello@ninepointlabs.com">hello@ninepointlabs.com</a>
+        <a href="https://github.com/ninepointlabs">GitHub</a>
+        <a href="https://x.com/ninepointlabs">X</a>
+        <a href="https://njump.me/npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7" title="npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7">Nostr</a>
+      </footer>
     </main>
-    <footer class="site-footer">
-      <div class="wrap">
-        <div class="footer-grid">
-          <div>
-            <h3>Nine Point Labs</h3>
-            <p>
-              Small, useful things for Linux, Nostr, and people who like to write. Built in
-              Whitehouse, Texas by Tim Apple and a patient team of AI agents.
-            </p>
-            <p style="margin-top: 0.75rem">
-              <a href="mailto:hello@ninepointlabs.com">hello@ninepointlabs.com</a>
-            </p>
-          </div>
-          <div>
-            <h3>Around here</h3>
-            <ul>
-              <li><a href="work.html">Work</a></li>
-              <li><a href="how-i-build.html">How I build</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="recommends.html">Recommends</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </div>
-          <div>
-            <h3>Elsewhere</h3>
-            <ul>
-              <li><a href="https://github.com/ninepointlabs" rel="noopener noreferrer">GitHub</a></li>
-              <li><a href="https://blog.ninepointlabs.com" rel="noopener noreferrer">Blog</a></li>
-              <li><a href="https://timapple.com" rel="noopener noreferrer">timapple.com</a></li>
-              <li><a href="https://x.com/ninepointlabs" rel="noopener noreferrer">X</a></li>
-              <li>
-                <a href="https://njump.me/npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7" rel="noopener noreferrer">Nostr</a>
-                <span class="npub">npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <p class="footer-bottom">&copy; <span data-current-year></span> Nine Point Labs. Made with care, and with help.</p>
-      </div>
-    </footer>
-
   </body>
 </html>
