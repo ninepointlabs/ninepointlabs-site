@@ -4,60 +4,246 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nine Point Labs</title>
-    <meta name="description" content="Nine Point Labs is Tim Apple's workshop in Whitehouse, Texas. Links to every blog, product and project site." />
+    <meta name="description" content="Nine Point Labs is Tim Apple's workshop in Whitehouse, Texas: Repokase, Jubako, Rune, omaforge, Bahá'í Reader, Speakeasy, omasync, fm-cli, autonomix-cli, folderblog and Persistwise." />
     <link rel="canonical" href="https://ninepointlabs.com/" />
     <link rel="icon" href="assets/npl-mark-ninepoint.svg" type="image/svg+xml" />
     <meta property="og:title" content="Nine Point Labs" />
-    <meta property="og:description" content="Links to every Nine Point Labs blog, product and project site." />
+    <meta property="og:description" content="Small, useful software for Linux, and for people who like to write." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ninepointlabs.com/" />
     <meta property="og:image" content="https://ninepointlabs.com/assets/Lightt_npl_logo.png" />
-    <meta name="theme-color" content="#0f6b6e" />
+    <meta name="theme-color" content="#0c0e11" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <main class="wrap">
-      <header class="intro">
-        <img src="assets/npl-mark-ninepoint.svg" alt="" class="mark" width="56" height="56" />
-        <h1>Nine Point Labs</h1>
-        <p>Small, useful things for Linux, Nostr, and people who like to write. Built in Whitehouse, Texas by Tim Apple.</p>
-      </header>
+    <a class="skip" href="#work">Skip to the projects</a>
 
-      <section aria-labelledby="blogs">
-        <h2 id="blogs">Blogs</h2>
-        <ul class="links">
-          <li><a href="https://blog.ninepointlabs.com"><strong>The Word from Ninepoint Labs</strong><span>The Nine Point Labs blog</span><em>blog.ninepointlabs.com</em></a></li>
-          <li><a href="https://timapple.com"><strong>Tim Apple's Desk</strong><span>Tim's personal blog</span><em>timapple.com</em></a></li>
-          <li><a href="https://myazerothlife.com"><strong>My Azeroth Life</strong><span>Dispatches from a life lived in Azeroth</span><em>myazerothlife.com</em></a></li>
+    <header class="top wrap">
+      <a class="brand" href="./">
+        <img src="assets/npl-mark-ninepoint.svg" alt="" width="28" height="28" />
+        <span>Nine Point Labs</span>
+      </a>
+      <nav aria-label="Site">
+        <a href="#work">Work</a>
+        <a href="#writing">Blogs</a>
+        <a href="mailto:hello@ninepointlabs.com">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero wrap" aria-labelledby="title">
+        <svg class="hero-star" viewBox="0 0 300 300" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="heroStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0a536a" />
+              <stop offset="100%" stop-color="#2aa4cf" />
+            </linearGradient>
+          </defs>
+          <polygon points="150,32 167.79,101.14 225.85,59.61 195.03,124 266.21,129.51 201.21,159.03 252.19,209 183.42,189.83 190.36,260.88 150,202 109.64,260.88 116.58,189.83 47.81,209 98.79,159.03 33.79,129.51 104.97,124 74.15,59.61 132.21,101.14" fill="none" stroke="url(#heroStroke)" stroke-width="1.2" stroke-linejoin="round" />
+          <polygon points="150,108 156.16,133.09 177,117.83 165.59,141 191.36,142.71 167.73,153.13 186.37,171 161.57,163.79 164.36,189.47 150,168 135.64,189.47 138.43,163.79 113.63,171 132.27,153.13 108.64,142.71 134.41,141 123,117.83 143.84,133.09" fill="none" stroke="url(#heroStroke)" stroke-width="0.8" />
+        </svg>
+
+        <p class="eyebrow">Whitehouse, Texas · Est. by Tim Apple</p>
+        <h1 id="title">Small, useful software for <span class="hl">Linux</span>, and for people who like to <span class="hl">write</span>.</h1>
+        <p class="lede">Eleven things built at Nine Point Labs. Most of them are native apps for <a href="https://omarchy.org">Omarchy</a>. All but one are open source on <a href="https://github.com/ninepointlabs">GitHub</a>.</p>
+
+        <ol class="index" aria-label="All projects">
+          <li><a href="#repokase"><b>01</b>Repokase</a></li>
+          <li><a href="#jubako"><b>02</b>Jubako</a></li>
+          <li><a href="#rune"><b>03</b>Rune</a></li>
+          <li><a href="#omaforge"><b>04</b>omaforge</a></li>
+          <li><a href="#bahai-reader"><b>05</b>Bahá’í Reader</a></li>
+          <li><a href="#speakeasy"><b>06</b>Speakeasy</a></li>
+          <li><a href="#omasync"><b>07</b>omasync</a></li>
+          <li><a href="#fm-cli"><b>08</b>fm-cli</a></li>
+          <li><a href="#autonomix-cli"><b>09</b>autonomix-cli</a></li>
+          <li><a href="#folderblog"><b>10</b>folderblog</a></li>
+          <li><a href="#persistwise"><b>11</b>Persistwise</a></li>
+        </ol>
+      </section>
+
+      <div id="work">
+        <section class="band wrap" aria-labelledby="desktop">
+          <header class="band-head">
+            <h2 id="desktop">On the desktop</h2>
+            <p>Native apps that follow your Omarchy theme.</p>
+          </header>
+
+          <div class="grid">
+            <a class="card span-7" id="repokase" href="https://repokase.ninepointlabs.com" style="--c: #f38d70">
+              <figure class="shot"><img src="assets/projects/repokase.webp" alt="Repokase listing repositories with health badges beside a details pane" width="1200" height="675" loading="lazy" /></figure>
+              <div class="body">
+                <p class="meta"><b>01</b><span>Desktop app · Python</span></p>
+                <h3>Repokase</h3>
+                <p class="tagline">Your repos, chef’s choice.</p>
+                <p>Every GitHub repository you own or share, in one keyboard-driven app. CI runs, traffic history, health warnings and bulk actions, without opening the browser.</p>
+                <p class="go">repokase.ninepointlabs.com</p>
+              </div>
+            </a>
+
+            <a class="card span-5" id="jubako" href="https://jubako.ninepointlabs.com" style="--c: #e2b65e">
+              <figure class="shot"><img src="assets/projects/jubako.webp" alt="Jubako showing an orders table in its grid" width="1200" height="720" loading="lazy" /></figure>
+              <div class="body">
+                <p class="meta"><b>02</b><span>Desktop app · Python</span></p>
+                <h3>Jubako</h3>
+                <p class="tagline">A simple database for your own computer.</p>
+                <p>Like the old Microsoft Access, without the hard parts. Drop in a spreadsheet, work in a grid or a form, print a tidy report. No SQL, no server.</p>
+                <p class="go">jubako.ninepointlabs.com</p>
+              </div>
+            </a>
+
+            <a class="card span-5 card-rune" id="rune" href="https://rune.ninepointlabs.com" style="--c: #d98f4e">
+              <div class="art art-rune" aria-hidden="true">
+                <svg viewBox="0 0 100 100"><path d="M30 15 L30 85 M30 15 L68 38 L30 56 M68 38 L78 85" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="square" /></svg>
+                <p>The word processor that writes <em>with</em> you.</p>
+              </div>
+              <div class="body">
+                <p class="meta"><b>03</b><span>Desktop app · C++ · Early</span></p>
+                <h3>Rune</h3>
+                <p>An ODF-first word processor with real <code>.docx</code> round-trips. AI writes into the document itself, not into a sidebar bolted onto old code.</p>
+                <p class="go">rune.ninepointlabs.com</p>
+              </div>
+            </a>
+
+            <a class="card span-7" id="omaforge" href="https://omaforge.ninepointlabs.com" style="--c: #7aa2f7">
+              <figure class="shot"><img src="assets/projects/omaforge.webp" alt="omaforge listing installed Retail addons, two with updates waiting" width="1200" height="773" loading="lazy" /></figure>
+              <div class="body">
+                <p class="meta"><b>04</b><span>Desktop app · Python</span></p>
+                <h3>omaforge</h3>
+                <p class="tagline">World of Warcraft addons, on Linux.</p>
+                <p>Finds every WoW client in your Wine and Proton prefixes, including addons it didn’t install. Updates from CurseForge, WoWInterface and GitHub.</p>
+                <p class="go">omaforge.ninepointlabs.com</p>
+              </div>
+            </a>
+
+            <a class="card span-12 card-wide" id="bahai-reader" href="https://bahaireader.org" style="--c: #d9ae5b">
+              <div class="body">
+                <p class="meta"><b>05</b><span>Desktop app · GTK 4</span></p>
+                <h3>Bahá’í Reader</h3>
+                <p class="tagline">A quiet place for the Writings.</p>
+                <p>An offline prayer book and Writings reader for Linux. Packages for Arch, Debian, Fedora and openSUSE, plus AppImage and Flatpak. Follows your Omarchy colours live.</p>
+                <p class="go">bahaireader.org</p>
+              </div>
+              <figure class="shot"><img src="assets/projects/bahai-reader.webp" alt="Bahá’í Reader open to the first of the Hidden Words" width="994" height="831" loading="lazy" /></figure>
+            </a>
+          </div>
+        </section>
+
+        <section class="band wrap" aria-labelledby="terminal">
+          <header class="band-head">
+            <h2 id="terminal">In the terminal and the bar</h2>
+            <p>Keyboard first, out of your way.</p>
+          </header>
+
+          <div class="grid grid-bar">
+            <a class="card span-7" id="speakeasy" href="https://github.com/ninepointlabs/speakeasy" style="--c: #e0574f">
+              <figure class="shot"><img src="assets/projects/speakeasy.webp" alt="Speakeasy task list: one task needs you, one is done, two are working" width="850" height="530" loading="lazy" /></figure>
+              <div class="body">
+                <p class="meta"><b>06</b><span>Omarchy bar · CLI</span></p>
+                <h3>Speakeasy</h3>
+                <p class="tagline">The back room for your AI agents.</p>
+                <p>Run Claude Code, Codex, Gemini and others in hidden terminals, one named task each. The bar tells you which ones are working, done, or waiting on you.</p>
+                <p class="go">github.com/ninepointlabs/speakeasy</p>
+              </div>
+            </a>
+
+            <a class="card span-5 card-tall" id="omasync" href="https://github.com/ninepointlabs/omasync" style="--c: #f5a524">
+              <figure class="shot shot-panel"><img src="assets/projects/omasync.webp" alt="The omasync panel with a pending device invite, two folders and a connected device" width="476" height="764" loading="lazy" /></figure>
+              <div class="body">
+                <p class="meta"><b>07</b><span>Omarchy bar · QML</span></p>
+                <h3>omasync</h3>
+                <p class="tagline">Syncthing in the Omarchy bar.</p>
+                <p>Folders, devices, live transfer rates and share invites at a glance. Starts and stops the service too, with no password prompt.</p>
+                <p class="go">github.com/ninepointlabs/omasync</p>
+              </div>
+            </a>
+
+            <a class="card span-7" id="fm-cli" href="https://github.com/ninepointlabs/fm-cli" style="--c: #1fd1b0">
+              <figure class="shot"><img src="assets/projects/fm-cli.webp" alt="The fm-cli terminal app reading a message" width="1200" height="290" loading="lazy" /></figure>
+              <div class="body">
+                <p class="meta"><b>08</b><span>Terminal · Go</span></p>
+                <h3>fm-cli</h3>
+                <p class="tagline">Fastmail from the terminal.</p>
+                <p>A full-screen mail app, scriptable commands that print JSON, and a live <code>watch</code> over Fastmail’s push connection. The engine behind the Omarchy Fastmail plugin.</p>
+                <p class="go">github.com/ninepointlabs/fm-cli</p>
+              </div>
+            </a>
+
+            <a class="card span-12 card-wide" id="autonomix-cli" href="https://github.com/ninepointlabs/autonomix-cli" style="--c: #8fd16a">
+              <div class="body">
+                <p class="meta"><b>09</b><span>Terminal · Go</span></p>
+                <h3>autonomix-cli</h3>
+                <p class="tagline">Install apps straight from GitHub Releases.</p>
+                <p>Point it at any repository. It picks the right package for your system, notices what’s already installed, and tells you when a new release lands.</p>
+                <p class="go">github.com/ninepointlabs/autonomix-cli</p>
+              </div>
+              <div class="art art-term" aria-hidden="true">
+                <p class="prompt"><span>$</span> autonomix-cli</p>
+                <p class="dim">Recognises</p>
+                <ul>
+                  <li>.deb</li>
+                  <li>.rpm</li>
+                  <li>.flatpak</li>
+                  <li>.snap</li>
+                  <li>.AppImage</li>
+                  <li>.pkg.tar.zst</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section class="band wrap" aria-labelledby="writers">
+          <header class="band-head">
+            <h2 id="writers">For writers</h2>
+            <p>Publishing without friction, and keeping it forever.</p>
+          </header>
+
+          <div class="grid">
+            <a class="card span-7" id="folderblog" href="https://folderblog.ninepointlabs.com" style="--c: #c8392b">
+              <figure class="shot"><img src="assets/projects/folderblog.webp" alt="A newspaper-style folderblog theme called Field Notes" width="1200" height="750" loading="lazy" /></figure>
+              <div class="body">
+                <p class="meta"><b>10</b><span>Background app · Rust</span></p>
+                <h3>folderblog</h3>
+                <p class="tagline">A folder is a blog.</p>
+                <p>Save a Markdown file into a folder and it’s live seconds later. No front matter, no build step, no deploy command. Themes are plain templates that coding agents can design.</p>
+                <p class="go">folderblog.ninepointlabs.com</p>
+              </div>
+            </a>
+
+            <a class="card span-5" id="persistwise" href="https://persistwise.com" style="--c: #9fb4c7">
+              <div class="art art-archive" aria-hidden="true">
+                <p class="dim">1 new post</p>
+                <ul>
+                  <li><span>Wayback Machine</span><i>saved</i></li>
+                  <li><span>IPFS, pinned</span><i>saved</i></li>
+                  <li><span>Local copy</span><i>saved</i></li>
+                </ul>
+              </div>
+              <div class="body">
+                <p class="meta"><b>11</b><span>Web service</span></p>
+                <h3>Persistwise</h3>
+                <p class="tagline">Writing that outlasts the platform.</p>
+                <p>Keep blogging wherever you already do. Persistwise watches your feeds and archives every new post, so your writing survives even if the platform doesn’t.</p>
+                <p class="go">persistwise.com</p>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="foot wrap">
+      <section aria-labelledby="writing">
+        <h2 id="writing">Blogs</h2>
+        <ul class="blogs">
+          <li><a href="https://blog.ninepointlabs.com">The Word from Ninepoint Labs</a></li>
+          <li><a href="https://timapple.com">Tim Apple’s Desk</a></li>
+          <li><a href="https://myazerothlife.com">My Azeroth Life</a></li>
         </ul>
       </section>
 
-      <section aria-labelledby="products">
-        <h2 id="products">Products</h2>
-        <ul class="links">
-          <li><a href="https://persistwise.com"><strong>Persistwise</strong><span>Writing that outlasts the platform: an archive of every post</span><em>persistwise.com</em></a></li>
-          <li><a href="https://folderblog.ninepointlabs.com"><strong>folderblog</strong><span>A folder is a blog: save Markdown, it's published seconds later</span><em>folderblog.ninepointlabs.com</em></a></li>
-          <li><a href="https://bahaireader.org"><strong>Bahá'í Reader</strong><span>Offline prayer book and Writings reader for Linux</span><em>bahaireader.org</em></a></li>
-          <li><a href="https://omaforge.ninepointlabs.com"><strong>omaforge</strong><span>World of Warcraft addon manager for Linux</span><em>omaforge.ninepointlabs.com</em></a></li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="omarchy">
-        <h2 id="omarchy">Omarchy</h2>
-        <ul class="links">
-          <li><a href="https://omarchy.ninepointlabs.com"><strong>Nine Point Labs for Omarchy</strong><span>Bar plugins, apps and themes for Omarchy Linux</span><em>omarchy.ninepointlabs.com</em></a></li>
-        </ul>
-      </section>
-
-      <section aria-labelledby="nostr">
-        <h2 id="nostr">Nostr</h2>
-        <ul class="links">
-          <li><a href="https://omostrich.com"><strong>Omostrich</strong><span>A friendly guard for your Nostr key</span><em>omostrich.com</em></a></li>
-          <li><a href="https://relay.pleb.one"><strong>relay.pleb.one</strong><span>Community Nostr relay from Pleb One</span><em>relay.pleb.one</em></a></li>
-        </ul>
-      </section>
-
-      <footer class="elsewhere">
+      <div class="elsewhere">
         <a href="mailto:hello@ninepointlabs.com" aria-label="Email hello@ninepointlabs.com" title="Email hello@ninepointlabs.com">
           <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2.4V18h20V6.4l-10 6.6L2 6.4zM3.6 6 12 11.5 20.4 6H3.6z"/></svg>
         </a>
@@ -73,7 +259,9 @@
         <a href="https://njump.me/npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7" aria-label="Nostr (npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7)" title="Nostr (npub13hyx3qsqk3r7ctjqrr49uskut4yqjsxt8uvu4rekr55p08wyhf0qq90nt7)">
           <svg viewBox="44 40 176 176" aria-hidden="true" focusable="false"><path d="M210.8 199.4c0 3.1-2.5 5.7-5.7 5.7h-68c-3.1 0-5.7-2.5-5.7-5.7v-15.5c.3-19 2.3-37.2 6.5-45.5 2.5-5 6.7-7.7 11.5-9.1 9.1-2.7 24.9-.9 31.7-1.2 0 0 20.4.8 20.4-10.7s-9.1-8.6-9.1-8.6c-10 .3-17.7-.4-22.6-2.4-8.3-3.3-8.6-9.2-8.6-11.2-.4-23.1-34.5-25.9-64.5-20.1-32.8 6.2.4 53.3.4 116.1v8.4c0 3.1-2.6 5.6-5.7 5.6H57.7c-3.1 0-5.7-2.5-5.7-5.7v-144c0-3.1 2.5-5.7 5.7-5.7h31.7c3.1 0 5.7 2.5 5.7 5.7 0 4.7 5.2 7.2 9 4.5 11.4-8.2 26-12.5 42.4-12.5 36.6 0 64.4 21.4 64.4 68.7v83.2ZM150 99.3c0-6.7-5.4-12.1-12.1-12.1s-12.1 5.4-12.1 12.1 5.4 12.1 12.1 12.1S150 106 150 99.3Z"/></svg>
         </a>
-      </footer>
-    </main>
+      </div>
+
+      <p class="sign">Nine Point Labs · Whitehouse, Texas</p>
+    </footer>
   </body>
 </html>

@@ -2,7 +2,7 @@
 
 Static landing page for [ninepointlabs.com](https://ninepointlabs.com), served by GitHub Pages.
 
-One hand-written page, `index.html`, linking to every Nine Point Labs blog, product and project site. Styles are in `css/styles.css`. There is no framework, package install, or build step.
+One hand-written page, `index.html`, featuring eleven Nine Point Labs projects, with the blogs in the footer. Styles are in `css/styles.css`; project screenshots are WebP files in `assets/projects/`. There is no framework, package install, or build step.
 
 To preview:
 
