@@ -1,0 +1,4 @@
+# GitHub Pages (Jekyll) settings.
+# docs/ holds internal notes such as the brand guide; keep it off the public site.
+exclude:
+  - docs
