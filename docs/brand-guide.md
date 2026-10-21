@@ -11,42 +11,94 @@ What the brand looks and sounds like today, taken from this repo (`css/styles.cs
 - **Place and founder:** Whitehouse, Texas. Tim Apple.
 - **Product names:** lowercase for CLIs and small tools (omaforge, omasync, fm-cli, autonomix-cli, folderblog); capitalised for apps and services (Repokase, Jubako, Rune, Speakeasy, Persistwise). "Bahá’í Reader" keeps the accents and the curly apostrophe.
 
-## 2. Logo: the nine-point star
+## 2. Logo: the nine-line 9
 
-**Current master file:** `assets/npl-mark-ninepoint.svg` (1,283 bytes, `viewBox="0 0 300 300"`).
+### What it means
+The mark is a blocky **9 built from nine short horizontal lines**.
 
-- Outer shape: an 18-vertex nine-point star outline, `fill="none"`, `stroke-width="16"`, `stroke-linejoin="round"`, stroked with a linear gradient **#0a536a → #2aa4cf** running top-left to bottom-right.
-- Inner shape: a smaller nine-point star, filled with a linear gradient **#0b5f7b → #1f98c3** running bottom-left to top-right, at `opacity="0.9"`.
+In the Army, a nine-line is a short report with nine items. You fill it in, send it, and help is on the way. It has no fluff and nothing extra, and it works when it counts. Tim carried that idea from the infantry into building software. Nine Point Labs makes small, clear tools for Linux and the open web that do their job and stay out of your way.
 
-**Current uses on ninepointlabs.com**
+The nine lines are the nine items. Together they make the 9 in the name. (And "Labs" is a small nod to Bell Labs and Plan 9.)
 
-| Where | How |
-|---|---|
-| Header | The SVG at 28×28 px beside the wordmark "Nine Point Labs" (font-weight 650, letter-spacing −0.01em, 0.6rem gap) |
-| Favicon | The same SVG (`<link rel="icon" type="image/svg+xml">`). There is no `.ico` or apple-touch-icon yet |
-| Hero background | Inline SVG with the same two polygons drawn as outlines only (outer stroke 1.2, inner stroke 0.8, no fill), gradient #0a536a → #2aa4cf, opacity 0.55 (0.35 below 36rem), one turn every 240 s, stopped under `prefers-reduced-motion` |
-| `og:image` | `assets/Lightt_npl_logo.png`, 1294×1077, 1,852,671 bytes. A different, older-looking star with a bold "NINE POINT / LABS" lockup on a faded stock photo, with a transparency checkerboard baked into one corner. It doesn't match the SVG |
+Keep it light. The mark is about a clear, disciplined format. It isn't a military emblem. Never pair it with stars, crosses, medical symbols, insignia or anything that suggests official endorsement.
 
-The blog uses an identical copy of the SVG and a flat one-colour star in its footer (observed elsewhere).
+### Construction
+- Unit grid: one unit **u** = 8 at master size. Lines are 2u tall with 1u gaps. The mark is 18u wide and 26u tall (144 × 208), and each stem is 5u wide. Corners are rounded at 0.375u, or left square below u = 4.
+- Rows from top to bottom: full bar, then three split rows (left and right stems), then a full bar, then three right-stem rows, then a full bar. That makes nine lines.
+- **Small mark, 16 px:** 5 lines (bar, posts, bar, post, bar). The posts are 3 px tall so the bowl still reads as a 9.
+- **Small mark, 24 px:** 7 lines (bar, 2 split rows, bar, 2 right-stem rows, bar).
+- The 32 px favicon uses the full 9-line mark at u = 1, which lands on exact pixels.
 
-**Rules**
+### Colour
+| Use | Mark | Wordmark |
+|---|---|---|
+| On light (paper `#faf6ef` or white) | gradient `#0a536a` → `#2aa4cf` | dark `#0c0e11` |
+| On dark (`#0c0e11`) | gradient `#2aa4cf` → `#4cc3e0` | paper `#faf6ef` |
+| Blog / paper style | teal `#0f6b6e`, or gradient `#0a536a` → `#0f6b6e` | dark `#0c0e11`, tagline teal |
+| One colour (tray, dock, print, emboss) | `currentColor`: any single brand colour, black or white | same colour |
 
-- Treat the SVG as the only approved mark. Don't use the PNG in new work.
-- Don't recolour the star except to the blue gradients above or to a single colour (`currentColor`).
-- Don't rotate it as a static image. The slow spin on the hero is the only motion.
-- Don't put it on photos.
-- **Recommended / target:** clear space of a quarter of the mark's height on all sides; minimum size 16 px for favicons and 24 px in UI; a horizontal lockup (star + wordmark) built from the SVG for social images.
+The gradient runs diagonally across the whole mark, from top left to bottom right. It's never applied per line.
+
+### Type
+- Wordmark: **Inter Bold**, tracking −0.02em. It's shipped as outlined paths in the lockup SVGs, so no font is needed.
+- Tagline and labels: **JetBrains Mono** Medium. The tagline is "small, clear tools for Linux", always in lower case except for "Linux".
+
+### Lockups
+- **Horizontal** (default): the mark on the left, with "Nine Point Labs" vertically centred on it. The gap is 7u, and the cap height is about 39% of the mark's height.
+- **Stacked:** the mark centred above the wordmark, with a 6u gap. Use it for square spaces, the Shopify square and social avatars with room.
+- **Mark only:** favicons, app icons and avatars.
+
+### Clear space and minimum size
+- **Clear space:** keep one stem width (5u, about 19% of the mark's height) clear on every side. The lockup SVGs already include it.
+- **Full 9-line mark:** at least 26 px tall on screen and 8 mm in print.
+- **16–24 px:** switch to the small 5- or 7-line mark, never a shrunken master.
+- **Horizontal lockup:** at least 140 px wide. **Stacked lockup:** at least 96 px wide.
+
+### Don'ts
+- Don't add stars, crosses, medical or military symbols, insignia, flags or badges.
+- Don't change the number of lines on the full mark, which is always nine.
+- Don't rotate, skew, outline, add drop shadows, or put a gradient on each line.
+- Don't recolour outside the palette, or set the wordmark in another font.
+- Don't put the gradient mark on busy photos. Use the one-colour glyph instead.
+
+### Secondary pattern
+The 3×3 grid of dots (`pattern/npl-grid-tile-*.svg`, a 96 px tile) is a quiet background texture only: teal at about 18% on paper, or accent at about 12% on dark. It never replaces the logo. On its own, a plain 3×3 grid looks like the "show apps" launcher icon.
+
+### Files
+
+**In this repo (ninepointlabs.com):** `assets/npl-mark.svg` (header in light mode), `assets/npl-mark-on-dark.svg` (header in dark mode); at the site root `favicon.ico`, `favicon.svg`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`, `icon-maskable-192.png`, `icon-maskable-512.png`, `site.webmanifest` and `og-default.png` (share image). The hero mark is drawn inline in `index.html` (class `.hero-mark`), static, at low opacity.
+
+**Full source set** (kept with the designer's rebrand files, `final/`, not in this repo):
+- `mark/`: `npl-mark.svg` (master, on light), `npl-mark-on-dark.svg`, `npl-mark-small-16*.svg`, `npl-mark-small-24*.svg`, plus PNGs
+- `glyph/`: `npl-glyph.svg` (currentColor master), `npl-glyph-16.svg`, `npl-glyph-24.svg`, `nine-point-labs-symbolic.svg` (16 px, GNOME `#2e3436` convention)
+- `lockup/`: horizontal and stacked, each in dark-on-light and light-on-dark, as SVG, PNG and @2x PNG (transparent background)
+- `icons/`: `favicon.svg`, `favicon.ico` (16/32/48), `favicon-16/32/48.png`, `apple-touch-icon.png` (180), `icon-192/512.png`, `icon-maskable-192/512.png`, `app-icon-256/512.png` (rounded square) and `site.webmanifest`
+- `social/`: `og-default.png` (main site, dark) and `og-blog.png` (paper/teal), both 1200×630
+- `shopify/`: `shopify-logo.png` (1200 wide, on light), `shopify-logo-on-dark.png` and `shopify-logo-square.png` (1024)
+- `pattern/`: the 3×3 grid tiles and previews
+- `logo-sheet.png`: the one-page overview
+- `build.py` and `sheet.py` rebuild everything (`/workspace/.venvs/rebrand/bin/python build.py && … sheet.py`)
+
+#### HTML head snippet
+```html
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:image" content="https://ninepointlabs.com/og-default.png">
+<meta property="og:image:alt" content="Nine Point Labs: small, clear tools for Linux">
+```
 
 ## 3. Colour
 
-### Brand blues (from the star)
+### Brand blues
 
 | Role | Hex | Where (current) |
 |---|---|---|
-| Star stroke, dark end | `#0a536a` | Mark, hero star, light-mode headline gradient |
-| Star fill, dark end | `#0b5f7b` | Mark |
-| Star fill, light end | `#1f98c3` | Mark, light-mode headline gradient |
-| Star stroke, light end | `#2aa4cf` | Mark, hero star, dark-mode headline gradient |
+| Brand blue, deep | `#0a536a` | Mark gradient on light, light-mode headline gradient |
+| Brand blue, dark | `#0b5f7b` | Older artwork only |
+| Brand blue, mid | `#1f98c3` | Light-mode headline gradient |
+| Brand blue, bright | `#2aa4cf` | Mark gradient (both schemes), hero mark, dark-mode headline gradient |
 | Headline highlight, dark | `#2aa4cf → #8fe0ef` | `h1 .hl`, 100° |
 | Headline highlight, light | `#0a536a → #1f98c3` | `h1 .hl`, 100° |
 
@@ -150,7 +202,7 @@ Mono is used for the nav, eyebrow, index, meta labels and "go" links. The serif 
 - **Drawn art:** projects without a screenshot get a drawn panel instead (the Rune glyph, the autonomix-cli terminal, the Persistwise archive list).
 - **Hero:** eyebrow, then the H1 with gradient-highlighted keywords ("Linux", "write"), then the lede, then a numbered mono index (01–11 today) that links to each card.
 - **Focus:** a 3px solid `--focus` outline with a 3px offset (4px on cards).
-- **Motion:** respects `prefers-reduced-motion` (stops the hero spin and card transitions).
+- **Motion:** respects `prefers-reduced-motion` (stops card transitions; the hero mark is static).
 - **Observed elsewhere:** the blog is a single narrow column with a topics sidebar, white cards, 1px rules and inline code on a surface background.
 
 ## 6. Tone of voice
@@ -161,13 +213,13 @@ Taken from live copy on the home page and the blog.
 - Taglines are short and often idiomatic: "Your repos, chef’s choice." · "The back room for your AI agents." · "A folder is a blog." · "Writing that outlasts the platform." · "A simple database for your own computer."
 - Pattern: what it is, who it's for, then what you *don't* have to do. Familiar comparisons help: "Like the old Microsoft Access, without the hard parts."
 - Blog openers are second-person hooks ("You know the feeling…"), with occasional humour (observed elsewhere).
-- Audience: Linux and Omarchy users, terminal people, writers and bloggers, and the Bahá’í and World of Warcraft communities.
+- Audience: Linux and Omarchy users, terminal people, writers and bloggers, and the World of Warcraft community.
 
 ## 7. Do and don't
 
 **Do**
 
-- Use the blue star gradient on the dark background (`#0c0e11`) or on warm paper (`#f6f2ea`).
+- Use the brand blue gradient on the dark background (`#0c0e11`) or on warm paper (`#f6f2ea`).
 - Keep one accent per surface: brand blue for the site, a project's colour only inside its card.
 - Lead with the benefit in one sentence. Mention open source and Omarchy-native where true.
 - Keep focus rings visible (amber `#f3bd55` dark, `#8a5b00` light) and honour `prefers-color-scheme` and `prefers-reduced-motion`.
@@ -189,7 +241,7 @@ Taken from live copy on the home page and the blog.
 
 ## 9. Open questions
 
-1. Is the star in the PNG logo an older mark? Should it be retired?
+1. ~~Is the star in the PNG logo an older mark? Should it be retired?~~ Resolved Oct 2026: the star is retired; see §2.
 2. Should the blog adopt the site's blue and dark default, or keep teal (`#0f6b6e`, observed elsewhere) as a separate "writing" look?
 3. Which contact address is canonical, hello@ or tim@?
 4. Will the Shopify store launch, and under what name and domain?

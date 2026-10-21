@@ -6,19 +6,20 @@
     <title>Nine Point Labs</title>
     <meta name="description" content="Small, useful open-source software for Linux and Omarchy, and for people who like to write. Made by Nine Point Labs in Whitehouse, Texas." />
     <link rel="canonical" href="https://ninepointlabs.com/" />
-    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48" />
-    <link rel="icon" href="assets/npl-mark-ninepoint.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta property="og:title" content="Nine Point Labs" />
     <meta property="og:description" content="Small, useful open-source software for Linux and Omarchy, and for people who like to write. Made by Nine Point Labs in Whitehouse, Texas." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ninepointlabs.com/" />
-    <meta property="og:image" content="https://ninepointlabs.com/assets/og-image.png" />
+    <meta property="og:image" content="https://ninepointlabs.com/og-default.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="The Nine Point Labs nine-point star beside the words Nine Point Labs: small, useful software for Linux, and for people who like to write." />
+    <meta property="og:image:alt" content="Nine Point Labs: small, clear tools for Linux" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://ninepointlabs.com/assets/og-image.png" />
+    <meta name="twitter:image" content="https://ninepointlabs.com/og-default.png" />
     <meta name="theme-color" content="#0c0e11" />
     <link rel="stylesheet" href="css/styles.css" />
     <script>window.goatcounter={path:function(p){return location.host+p}}</script>
@@ -29,7 +30,10 @@
 
     <header class="top wrap">
       <a class="brand" href="./">
-        <img src="assets/npl-mark-ninepoint.svg" alt="" width="28" height="28" />
+        <picture>
+          <source srcset="assets/npl-mark.svg" media="(prefers-color-scheme: light)" />
+          <img src="assets/npl-mark-on-dark.svg" alt="" width="19" height="28" />
+        </picture>
         <span>Nine Point Labs</span>
       </a>
       <nav aria-label="Site">
@@ -41,20 +45,32 @@
 
     <main>
       <section class="hero wrap" aria-labelledby="title">
-        <svg class="hero-star" viewBox="0 0 300 300" aria-hidden="true" focusable="false">
+        <svg class="hero-mark" viewBox="0 0 144 208" aria-hidden="true" focusable="false">
           <defs>
-            <linearGradient id="heroStroke" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#0a536a" />
-              <stop offset="100%" stop-color="#2aa4cf" />
+            <linearGradient id="heroMark" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="144" y2="208">
+              <stop offset="0" class="hero-mark-a" />
+              <stop offset="1" class="hero-mark-b" />
             </linearGradient>
           </defs>
-          <polygon points="150,32 167.79,101.14 225.85,59.61 195.03,124 266.21,129.51 201.21,159.03 252.19,209 183.42,189.83 190.36,260.88 150,202 109.64,260.88 116.58,189.83 47.81,209 98.79,159.03 33.79,129.51 104.97,124 74.15,59.61 132.21,101.14" fill="none" stroke="url(#heroStroke)" stroke-width="1.2" stroke-linejoin="round" />
-          <polygon points="150,108 156.16,133.09 177,117.83 165.59,141 191.36,142.71 167.73,153.13 186.37,171 161.57,163.79 164.36,189.47 150,168 135.64,189.47 138.43,163.79 113.63,171 132.27,153.13 108.64,142.71 134.41,141 123,117.83 143.84,133.09" fill="none" stroke="url(#heroStroke)" stroke-width="0.8" />
+          <g fill="url(#heroMark)">
+          <rect x="0" y="0" width="144" height="16" rx="3" />
+          <rect x="0" y="24" width="40" height="16" rx="3" />
+          <rect x="104" y="24" width="40" height="16" rx="3" />
+          <rect x="0" y="48" width="40" height="16" rx="3" />
+          <rect x="104" y="48" width="40" height="16" rx="3" />
+          <rect x="0" y="72" width="40" height="16" rx="3" />
+          <rect x="104" y="72" width="40" height="16" rx="3" />
+          <rect x="0" y="96" width="144" height="16" rx="3" />
+          <rect x="104" y="120" width="40" height="16" rx="3" />
+          <rect x="104" y="144" width="40" height="16" rx="3" />
+          <rect x="104" y="168" width="40" height="16" rx="3" />
+          <rect x="0" y="192" width="144" height="16" rx="3" />
+          </g>
         </svg>
 
         <p class="eyebrow">Whitehouse, Texas · Est. by Tim Apple</p>
         <h1 id="title">Small, useful software for <span class="hl">Linux</span>, and for people who like to <span class="hl">write</span>.</h1>
-        <p class="lede">What’s on the bench at Nine Point Labs. Most of it is native to <a href="https://omarchy.org">Omarchy</a>, with more bar plugins and themes on the <a href="https://omarchy.ninepointlabs.com">Nine Point Labs for Omarchy</a> hub. Everything except Persistwise is open source on <a href="https://github.com/ninepointlabs">GitHub</a>.</p>
+        <p class="lede">What’s on the bench at Nine Point Labs. Most of it is native to <a href="https://omarchy.org">Omarchy</a>, with more bar plugins and themes on the <a href="https://omarchy.ninepointlabs.com">Nine Point Labs for Omarchy</a> hub. Everything except Persistwise is open source on <a href="https://github.com/ninepointlabs">GitHub</a>, and our Nostr projects live in the open at <a href="https://github.com/PlebOne">PlebOne</a>.</p>
 
         <ol class="index" aria-label="All projects">
           <li><a href="#repokase"><b>01</b>Repokase</a></li>
@@ -308,6 +324,13 @@
           </div>
         </section>
       </div>
+
+      <section class="band wrap why" aria-labelledby="why-nine">
+        <header class="band-head">
+          <h2 id="why-nine">Why nine?</h2>
+        </header>
+        <p>In the Army, a nine-line is a short report with nine items. You fill it in, send it, and help is on the way. No fluff, nothing extra, and it works when it counts. I carried that idea with me from the infantry into building software. Nine Point Labs makes small, clear tools for Linux and the open web that do their job and stay out of your way. (And yes, the 'Labs' is a little nod to Bell Labs.)</p>
+      </section>
     </main>
 
     <footer class="foot wrap">
@@ -341,6 +364,7 @@
         </a>
       </div>
 
+      <p class="oss">Open source: Nostr projects, including the relay.pleb.one community relay, are at <a href="https://github.com/PlebOne">PlebOne on GitHub ↗</a></p>
       <p class="sign">Nine Point Labs · Whitehouse, Texas</p>
     </footer>
   </body>
