@@ -213,7 +213,7 @@ Taken from live copy on the home page and the blog.
 - Taglines are short and often idiomatic: "Your repos, chef’s choice." · "The back room for your AI agents." · "A folder is a blog." · "Writing that outlasts the platform." · "A simple database for your own computer."
 - Pattern: what it is, who it's for, then what you *don't* have to do. Familiar comparisons help: "Like the old Microsoft Access, without the hard parts."
 - Blog openers are second-person hooks ("You know the feeling…"), with occasional humour (observed elsewhere).
-- Audience: Linux and Omarchy users, terminal people, writers and bloggers, and the Bahá’í and World of Warcraft communities.
+- Audience: Linux and Omarchy users, terminal people, writers and bloggers, and the World of Warcraft community.
 
 ## 7. Do and don't
 
