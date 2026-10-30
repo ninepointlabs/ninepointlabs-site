@@ -9,7 +9,7 @@ What the brand looks and sounds like today, taken from this repo (`css/styles.cs
   - **Recommended / target:** "Nine Point Labs" everywhere, including the blog title.
 - **Positioning (current home page H1):** "Small, useful software for Linux, and for people who like to write."
 - **Place and founder:** Whitehouse, Texas. Tim Apple.
-- **Product names:** lowercase for CLIs and small tools (omaforge, omasync, fm-cli, autonomix-cli, folderblog); capitalised for apps and services (Repokase, Jubako, Rune, Speakeasy, Persistwise). "Bahá’í Reader" keeps the accents and the curly apostrophe.
+- **Product names:** lowercase for CLIs and small tools (omaforge, omasync, fm-cli, autonomix-cli, folderblog); capitalised for apps and services (Repokase, Jubako, Speakeasy, Persistwise). "Bahá’í Reader" keeps the accents and the curly apostrophe.
 
 ## 2. Logo: the nine-line 9
 
@@ -120,7 +120,7 @@ Dark is the default; light comes from `prefers-color-scheme: light`.
 
 - `theme-color` meta: `#0c0e11`.
 - The body has a soft radial glow at the top right: `--accent` at 14%.
-- A few colours are hard-coded rather than tokens: the screenshot backdrop `#111`, the Rune art panel `#0d0b0a` / `#e9e1d2`, the terminal art `#0b0d0f` / `#d6dde3`, and the terminal art's small label `#6c757d`.
+- A few colours are hard-coded rather than tokens: the screenshot backdrop `#111`, the terminal art `#0b0d0f` / `#d6dde3`, and the terminal art's small label `#6c757d`.
 
 ### Project colours (`--c` on each card)
 
@@ -128,7 +128,6 @@ Dark is the default; light comes from `prefers-color-scheme: light`.
 |---|---|
 | Repokase | `#f38d70` |
 | Jubako | `#e2b65e` |
-| Rune | `#d98f4e` |
 | omaforge | `#7aa2f7` |
 | Bahá’í Reader | `#d9ae5b` |
 | Speakeasy | `#e0574f` |
@@ -186,7 +185,7 @@ There is no `@font-face`: Inter and JetBrains Mono render only if they're instal
 | Nav | `--mono`, 0.82rem |
 | Card meta | `--mono`, 0.75rem, uppercase, letter-spacing 0.06em |
 
-Mono is used for the nav, eyebrow, index, meta labels and "go" links. The serif is used only for italic taglines and the small-caps line on the Rune art.
+Mono is used for the nav, eyebrow, index, meta labels and "go" links. The serif is used only for italic taglines.
 
 **Observed elsewhere:** the blog uses a system stack (Segoe UI first) at 1.0625rem / 1.65 with a 40rem measure and no Inter or serif. The Omarchy hub loads JetBrains Mono from Google Fonts. The Shopify theme uses Inter.
 
@@ -199,7 +198,7 @@ Mono is used for the nav, eyebrow, index, meta labels and "go" links. The serif 
 - **Spacing:** there are no spacing tokens. Common values are 1rem, 1.25rem and 1.5rem. Section padding is fluid: the hero uses `clamp(3rem, 9vw, 7.5rem)` on top and bands use `clamp(2.5rem, 5vw, 4rem)`.
 - **Cards:** radius 1.25rem (`--radius`), 1px `--line` border, `--surface` background. On hover or focus they lift 3px and pick up a border, shadow and glow in their project colour.
 - **Screenshots:** WebP in `assets/projects/`, set inside a framed panel with a `#111` backdrop and an inner radius of 0.75rem. Aspect ratios vary by project (1200×675, 1200×720, 1200×773, 1200×750, 1200×290, 994×831, 850×530, 476×764). Every image has explicit `width` and `height`.
-- **Drawn art:** projects without a screenshot get a drawn panel instead (the Rune glyph, the autonomix-cli terminal, the Persistwise archive list).
+- **Drawn art:** projects without a screenshot get a drawn panel instead (the autonomix-cli terminal, the Persistwise archive list).
 - **Hero:** eyebrow, then the H1 with gradient-highlighted keywords ("Linux", "write"), then the lede, then a numbered mono index (01–11 today) that links to each card.
 - **Focus:** a 3px solid `--focus` outline with a 3px offset (4px on cards).
 - **Motion:** respects `prefers-reduced-motion` (stops card transitions; the hero mark is static).
