@@ -731,8 +731,10 @@ h1 .hl {
     grid-template-columns: 1fr;
   }
 
+  /* Sit flush with the screen edge (the .wrap gutter is 1.25rem); any
+     further right and the mark widens the page and it scrolls sideways. */
   .hero-mark {
-    right: -3rem;
+    right: -1.25rem;
     opacity: 0.07;
   }
 }
