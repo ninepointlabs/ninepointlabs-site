@@ -57,7 +57,10 @@
   box-sizing: border-box;
 }
 
+/* Clip sideways overflow on html as well as body. With body alone, phones widen
+   the layout viewport to fit the hero mark's bleed and the page pans sideways */
 html {
+  overflow-x: clip;
   scroll-behavior: smooth;
 }
 
