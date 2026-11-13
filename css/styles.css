@@ -443,6 +443,51 @@ h1 .hl {
   }
 }
 
+/* Cards with more than one destination: the card is not a link, its .go links are */
+
+.card-links:has(:focus-visible) {
+  border-color: color-mix(in srgb, var(--c) 55%, var(--line));
+  box-shadow: 0 1.5rem 3rem -1.5rem color-mix(in srgb, var(--c) 35%, transparent);
+  transform: translateY(-3px);
+}
+
+.card-links:has(:focus-visible)::before {
+  opacity: 1;
+}
+
+.card-links .body > p:not(.meta) {
+  max-width: 40rem;
+}
+
+.go-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  margin: auto 0 0;
+  padding: 1.1rem 0 0;
+  list-style: none;
+}
+
+.go-links .go {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.go-links .go:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
+.card:hover .go-links .go::after {
+  transform: none;
+}
+
+.card .go-links .go:hover::after,
+.card .go-links .go:focus-visible::after {
+  transform: translateX(0.3rem);
+}
+
 /* Wide cards: text beside the picture */
 
 .card-wide {
@@ -750,7 +795,10 @@ h1 .hl {
   }
 
   .card:hover,
-  .card:hover .shot img {
+  .card-links:has(:focus-visible),
+  .card:hover .shot img,
+  .card .go-links .go:hover::after,
+  .card .go-links .go:focus-visible::after {
     transform: none;
   }
 }
